@@ -37,7 +37,7 @@
 
 <section id="section" class="slide level1">
 <h1></h1>
-<p><a href="http://xkcd.com/242/"> <image src="xkcd-242.png" width="250" alt="Reproducibility"></image> </a></p>
+<p><a href="http://xkcd.com/242/"> <image src="xkcd-242.png" width="300" alt="Reproducibility"></image> </a></p>
 </section>
 <section class="slide level1">
 
@@ -73,14 +73,42 @@
 <ul>
 <li>many ways to do it, find something that works for you</li>
 <li>beyond scope of this discussion</li>
-<li>great example: <a href="http://dx.doi.org/10.1371/journal.pcbi.1000424"><strong>Noble WS</strong> (2009) A Quick Guide to Organizing Computational Biology Projects. <em>PLoS Computational Biology</em>, <strong>5</strong>(7):e1000424.</a></li>
+<li>example with salient points:<br /><a href="http://dx.doi.org/10.1371/journal.pcbi.1000424"><strong>Noble WS</strong> (2009) A Quick Guide to Organizing Computational Biology Projects. <em>PLoS Computational Biology</em>, <strong>5</strong>(7):e1000424.</a></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="why-automate">Why automate?</h2>
+<ul>
+<li>You <strong><em>will</em></strong> have to run your workflow again!
+<ul>
+<li>you get more data</li>
+<li>you discover a flaw in your analysis</li>
+<li>you need to try new parameters</li>
+<li>your computer crashes</li>
+</ul></li>
+<li>It saves you time
+<ul>
+<li>you delegate tedious tasks to the computer</li>
+<li>you don't have to babysit the terminal</li>
+</ul></li>
 </ul>
 </section>
 <section class="slide level1">
 
 <h2 id="automation">Automation</h2>
 <ul>
-<li>more content soon!</li>
+<li>shell scripts
+<ul>
+<li>simple</li>
+<li>familiar</li>
+</ul></li>
+<li>make files (more on this later)
+<ul>
+<li>awkward syntax</li>
+<li>more complex</li>
+<li>powerful features</li>
+</ul></li>
 </ul>
 </section>
 <section class="slide level1">
@@ -89,9 +117,10 @@
 <h3 id="what-to-document">What to document?</h3>
 <ul>
 <li>describe steps of a workflow</li>
+<li>note software versions</li>
 <li>defend important parameter choices</li>
-<li>issues you've identified and/or overcome</li>
-<li>commands you have not yet automated</li>
+<li>list issues you've identified and/or overcome</li>
+<li>record commands you have not yet automated</li>
 </ul>
 </section>
 <section class="slide level1">
@@ -101,7 +130,7 @@
 <ul>
 <li>README files</li>
 <li>wiki pages</li>
-<li>blog</li>
+<li>blogs</li>
 </ul>
 </section>
 <section class="slide level1">

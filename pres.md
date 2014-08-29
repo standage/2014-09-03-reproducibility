@@ -5,7 +5,7 @@
 #
 
 <a href="http://xkcd.com/242/">
-  <image src="xkcd-242.png" width="250" alt="Reproducibility" />
+  <image src="xkcd-242.png" width="300" alt="Reproducibility" />
 </a>
 
 ---------
@@ -39,13 +39,33 @@
 
 - many ways to do it, find something that works for you
 - beyond scope of this discussion
-- great example: [**Noble WS** (2009) A Quick Guide to Organizing Computational Biology Projects. *PLoS Computational Biology*, **5**(7):e1000424.](http://dx.doi.org/10.1371/journal.pcbi.1000424)
+- example with salient points:  
+[**Noble WS** (2009) A Quick Guide to Organizing Computational Biology Projects. *PLoS Computational Biology*, **5**(7):e1000424.](http://dx.doi.org/10.1371/journal.pcbi.1000424)
+
+---------
+
+## Why automate?
+
+- You **_will_** have to run your workflow again!
+    - you get more data
+    - you discover a flaw in your analysis
+    - you need to try new parameters
+    - your computer crashes
+- It saves you time
+    - you delegate tedious tasks to the computer
+    - you don't have to babysit the terminal
 
 ---------
 
 ## Automation
 
-- more content soon!
+- shell scripts
+    - simple
+    - familiar
+- make files (more on this later)
+    - awkward syntax
+    - more complex
+    - powerful features
 
 ---------
 
@@ -53,9 +73,10 @@
 ### What to document?
 
 - describe steps of a workflow
+- note software versions
 - defend important parameter choices
-- issues you've identified and/or overcome
-- commands you have not yet automated
+- list issues you've identified and/or overcome
+- record commands you have not yet automated
 
 ---------
 
@@ -64,7 +85,7 @@
 
 - README files
 - wiki pages
-- blog
+- blogs
 
 ---------
 
