@@ -1,0 +1,31 @@
+digraph
+{
+  graph [dpi=300]
+  node  [color="blue",shape="box"]
+  edge  [dir="back"]
+
+  manuscript  [label="manuscript.pdf"]
+  obs_plot    [label="observations.png"]
+  dist_plot   [label="distances.png"]
+  man_md      [label="manuscript.md"]
+  table_md    [label="table.md"]
+  man_temp    [label="manuscript_template.md"]
+  control_d   [label="control.dist"]
+  treatment_d [label="treatment.dist"]
+  control     [label="control.dat"]
+  treatment   [label="treatment.dat"]
+
+  manuscript  -> man_md
+  manuscript  -> obs_plot
+  manuscript  -> dist_plot
+  man_md      -> man_temp
+  man_md      -> table_md
+  table_md    -> control_d
+  table_md    -> treatment_d
+  dist_plot   -> control_d
+  dist_plot   -> treatment_d
+  obs_plot    -> control
+  obs_plot    -> treatment
+  control_d   -> control
+  treatment_d -> treatment
+}

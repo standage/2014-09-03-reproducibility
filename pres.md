@@ -6,27 +6,30 @@
 
 <a href="http://xkcd.com/242/">
   <image src="xkcd-242.png" width="300" alt="Reproducibility" />
-</a>
+</a>  
+http://xkcd.com/242/
 
 ---------
 
 ## Reproducibility
 
 - central pillar of scientific method
-- requires detailed documentation
-- will save you time and stress
+- requires good habits, dedication
+- will save you (and others) time and stress
 
 ---------
 
-## Replicate or Reproduce?
+## \[ree-pr*uh*-**doos**\]
 
-- **Replicate**: I give you my solution (code, data), you run it and get the same output
-- **Reproduce**: I give you a description of my solution, you implement it and get same/similar result
+1. I give you my solution (code, data, parameters), you run it and get the same output
+1. I give you a description of my solution, you implement it and get same/similar result
+
+<br />
+It's important to facilitate both as much as possible!
 
 ---------
 
-## Reproducibility
-### Key enablers
+## Reproducibility: key enablers
 
 - organization
 - automation
@@ -44,7 +47,7 @@
 
 ---------
 
-## Why automate?
+## Automation: why automate?
 
 - You **_will_** have to run your workflow again!
     - you get more data
@@ -91,4 +94,26 @@
 
 ## Version control
 
-- more content soon!
+- take periodic snapshots of your project
+- maintain searchable, usable project history
+- manage work across multiple machines
+
+---------
+
+## Benefits of version control
+
+- facilitates reviewing old code, data, and results
+- facilitates collaboration
+- provides backup
+
+---------
+
+## Version control systems
+
+- CVS
+- Subversion
+- git (more on this later)
+
+---------
+
+# More on make files
