@@ -6,3 +6,4 @@ Completing the associated homework requires a UNIX system with the following sof
 - Python
 - R
 - [Pandoc](http://johnmacfarlane.net/pandoc/installing.html)
+- LaTeX

@@ -13,8 +13,11 @@ distances.png:		control.dist treatment.dist dist.R
 observations.png:	control.dat treatment.dat pos.R
 			./pos.R control.dat treatment.dat observations.png
 
-%.dist:			%.dat dist.py
-			./dist.py < $^ > $@
+control.dist:		control.dat dist.py
+			./dist.py < control.dat > control.dist
+
+treatment.dist:		treatment.dat dist.py
+			./dist.py < treatment.dat > treatment.dist
 
 clean:			
 			rm -f manuscript.pdf manuscript.md table.md distances.png observations.png control.dist treatment.dist
