@@ -130,31 +130,38 @@ target:  prerequisite(s)
 ## Make: simple example
 
 ```make
-SRR001665.sam:        SRR001665_1.sai SRR001665_2.sai MG1655.fasta
-                      bwa sampe MG1655.fasta SRR001665_1.sai SRR001665_2.sai SRR001665_1.fastq SRR001665_2.fastq
+ecoli.sam:        ecoli_1.sai ecoli_2.sai MG1655.fasta
+                  bwa sampe MG1655.fasta ecoli_1.sai ecoli_2.sai \
+                      ecoli_1.fastq ecoli_2.fastq
 
-SRR001665_1.sai:      SRR001665_1.fastq MG1655.fasta
-                      bwa aln MG1566.fasta SRR001665_1.fastq > SRR001665_1.sai
+ecoli_1.sai:      ecoli_1.fastq MG1655.fasta
+                  bwa aln MG1566.fasta ecoli_1.fastq > ecoli_1.sai
 
-SRR001665_2.sai:      SRR001665_2.fastq MG1655.fasta
-                      bwa aln MG1566.fasta SRR001665_2.fastq > SRR001665_2.sai
+ecoli_2.sai:      ecoli_2.fastq MG1655.fasta
+                  bwa aln MG1566.fasta ecoli_2.fastq > ecoli_2.sai
 
-SRR001665_1.fastq:    SRR001665_1.fastq.gz
-                      gunzip SRR001665_1.fastq.gz
+ecoli_1.fastq:    ecoli_1.fastq.gz
+                  gunzip ecoli_1.fastq.gz
 
-SRR001665_2.fastq:    SRR001665_2.fastq.gz
-                      gunzip SRR001665_2.fastq.gz
+ecoli_2.fastq:    ecoli_2.fastq.gz
+                  gunzip ecoli_2.fastq.gz
 ```
 
-## Benefits of Make
+## Benefits of make
 
 - only rebuilds prerequisites if they are outdated
 - can build independent targets in parallel
 - *de facto* checkpointing and fault tolerance
 - wildcards and patterns provide flexibility
 
-## Example
+## Hands-on example
 
-![Example](example.png)
+<a href="https://github.com/standage/2014-09-03-reproducibility/blob/master/homework.md">
+  <img src="example.png" alt="Workflow for a Fake Project" style="width: 10em" />
+</a>
 
+Click the graphic for to see the homework description.
 
+# More on git
+
+## Coming soon!
