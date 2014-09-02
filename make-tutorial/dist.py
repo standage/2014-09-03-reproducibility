@@ -10,7 +10,7 @@ class Point:
     self.y = y
 
 def distance(p1, p2):
-  return ((p1.x - p2.x)**2 + (p1.y - p2.y)**2)**(0.5)
+  return ((p1.x - p2.x)**2 + (p2.y - p2.y)**2)**(0.5)
 
 def min_distance(p):
   stations = [Point(0,0), Point(1,1), Point(1,-1), Point(-1,-1), Point(-1,1)]

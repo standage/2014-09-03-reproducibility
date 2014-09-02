@@ -1,4 +1,4 @@
 |  Sample   |  # Observations  |  Mean distance  | Std. dev. distance  |
 | --------- | ---------------- | --------------- | ------------------- |
-|  Control  |      100         |    0.6846       |       0.3267        |
-| Treatment |       95         |    0.6159       |       0.2797        |
+|  Control  |      100         |    0.3100       |       0.2713        |
+| Treatment |       95         |    0.3237       |       0.2367        |

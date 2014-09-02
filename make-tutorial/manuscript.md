@@ -32,8 +32,8 @@ Nam quis enim blandit diam molestie scelerisque. Cras at condimentum augue. Aene
 
 |  Sample   |  # Observations  |  Mean distance  | Std. dev. distance  |
 | --------- | ---------------- | --------------- | ------------------- |
-|  Control  |      100         |    0.6846       |       0.3267        |
-| Treatment |       95         |    0.6159       |       0.2797        |
+|  Control  |      100         |    0.3100       |       0.2713        |
+| Treatment |       95         |    0.3237       |       0.2367        |
 
 
 Pellentesque sed mi ut velit porta lacinia. Pellentesque sollicitudin, augue id pellentesque vulputate, ipsum ante sollicitudin neque, eu aliquam purus massa eu enim. Donec vel lacus imperdiet ante rutrum elementum. Vivamus risus quam, tristique vitae faucibus quis, cursus sit amet mauris. Mauris bibendum dapibus neque vel consectetur. Morbi leo diam, feugiat eget molestie sed, faucibus at sem. Morbi condimentum, quam non tincidunt hendrerit, mauris nisl auctor est, vitae laoreet magna sem vehicula odio. Etiam efficitur neque tellus, ac laoreet sem ultricies in. Duis at vestibulum ante. Aliquam accumsan nibh erat, at sollicitudin erat egestas scelerisque.
