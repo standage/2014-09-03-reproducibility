@@ -25,8 +25,8 @@ http://xkcd.com/242/
 
 ## \[ree-pr*uh*-**doos**\]
 
-1. I give you my solution (code, data, parameters), you run it and get the same output
-1. I give you a description of my solution, you implement it and get same/similar result
+1. I give you my solution (code, data, parameters), you run it and get the same output (technical reproducibility)
+1. I give you a description of my solution, you implement it and get same/similar result (conceptual reproducibility)
 
 <br />
 It's important to facilitate both as much as possible!
@@ -156,3 +156,5 @@ SRR001665_2.fastq:    SRR001665_2.fastq.gz
 ## Example
 
 ![Example](example.png)
+
+
