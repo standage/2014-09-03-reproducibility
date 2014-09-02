@@ -1,17 +1,19 @@
 digraph
 {
   graph [dpi=300]
-  node  [color="blue",shape="box"]
   edge  [dir="back"]
 
+  node        [color="blue",shape="box"]
   manuscript  [label="manuscript.pdf"]
   obs_plot    [label="observations.png"]
   dist_plot   [label="distances.png"]
   man_md      [label="manuscript.md"]
   table_md    [label="table.md"]
-  man_temp    [label="manuscript_template.md"]
   control_d   [label="control.dist"]
   treatment_d [label="treatment.dist"]
+
+  node        [color="#009900",shape="box"]
+  man_temp    [label="manuscript_template.md"]
   control     [label="control.dat"]
   treatment   [label="treatment.dat"]
 

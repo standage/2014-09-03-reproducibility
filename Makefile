@@ -1,6 +1,6 @@
 all:			pres.html reveal.js example.png
 
-pres.html:		pres.md reveal.js
+pres.html:		pres.md reveal.js example.png
 			pandoc -t revealjs -s pres.md --self-contained -o pres.html
 
 reveal.js:		reveal.js-2.6.2
