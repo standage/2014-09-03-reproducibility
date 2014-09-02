@@ -1,5 +1,5 @@
 manuscript.pdf:		manuscript.md distances.png observations.png
-			pandoc -f markdown -t latex -o manuscript.pdf manuscript.md
+			pandoc -f markdown -t latex -o manuscript.pdf -V geometry:margin=1in manuscript.md
 
 manuscript.md:		manuscript-template.md table.md
 			./embed-table.py table.md manuscript-template.md > manuscript.md
