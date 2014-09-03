@@ -2,7 +2,7 @@
 # Daniel S. Standage
 # 3 Sept 2014
 # Determine the distance between each data point and the closest station.
-import sys
+import sys, time
 
 class Point:
   def __init__(self, x, y):
