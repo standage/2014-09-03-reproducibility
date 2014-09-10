@@ -53,3 +53,84 @@ You should get a message saying you're on the master branch and that the working
 Now, edit the README file: add your name and a few notes, whatever you would like.
 Then go back to the command prompt and type ``git status``.
 What is the status now?
+
+### 3.
+
+Now that you've modified the README file, type ``git add README`` to stage the modified file.
+What does ``git status`` report for the file now?
+
+Open up the file again and make some additional changes.
+Then go back to the command prompt and type ``git status`` again.
+
+- Explain why the README file shows up twice in the status message.
+- If you were to store a snapshot at this point (with ``git commit``), what would be stored?
+
+Now check your prediction.
+
+```bash
+# Take a snapshot
+git commit -m "My first commit"
+
+# Look at the git log file to find the commit ID, a long string of letters and digits
+git log
+
+# Copy the commit ID and paste it into this command in place of COMMIT_ID_HERE
+# This shows the contents of the file from your snapshot.
+git show COMMIT_ID_HERE:README
+
+# This command will show you differences between the last snapshot and the
+# files' current state, if there are any differences.
+git diff
+```
+
+When you're done, run ``git stash`` to discard any uncommitted changes to files in the repo.
+
+### 4. 
+
+In your web browser, go to GitHub and refresh the project page.
+Can you see the snapshot you just committed on GitHub?
+Why or why not?
+
+Now, back in your terminal run ``git push origin master`` and supply your GitHub username and password.
+Then, go back to the browser and refresh the project page.
+Any changes?
+
+### 5.
+
+Create a new file in your repo with the following command.
+
+```bash
+echo "Essentially, all models are wrong, but some are useful. -- George E. P. Box" > quotes.txt
+```
+
+Now enter the following commands.
+
+```bash
+git status
+git add quotes.txt
+git status
+```
+
+- Explain why ``git status`` gives different output the second time it was run.
+
+Now, store another snapshot of your repo to include the new ``quotes.txt`` file.
+
+```bash
+git commit -m "Added Box quote"
+```
+
+### 6.
+
+Back in your web browser, return the repo's GitHub page.
+Next to the dropdown menu containing the text "branch: **master**", there should be a + symbol that allows you to add a new file to your repo directly in the web browser.
+Click the + symbol, give the new file a name "food.txt", enter your favorite food, and then click the "Commit new file" button.
+
+Return to the project page.
+Just beneath the project name and description, there should be a summary of the project showing the number of commits, branches, releases, and contributors.
+How many commits are there in your GitHub clone?
+Click on **Commits** to see a log in your web browser.
+
+Now go back to your terminal and type ``git log``.
+How many commits are there in your local clone?
+Are there any differences between what's on GitHub and what's stored locally?
+If so, why?
