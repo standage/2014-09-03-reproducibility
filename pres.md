@@ -164,4 +164,97 @@ Click the graphic for to see the homework description.
 
 # More on git
 
-## Coming soon!
+## Outline
+
+- concepts
+- syntax
+- hands on example
+
+## Git: concepts
+
+- **commit**: a snapshot of your project
+- **repository**: contents of your project and its location
+- **clone**: different copies of your repository
+- **push**: update a remote clone from your local clone
+- **pull**: update your local clone from a remote clone
+
+## Git: two-step commit process
+
+- **staging**: indicate that a file has changes you want to commit
+- **committing**: permanently store all staged changes
+
+## Git syntax: creating a repo
+
+```bash
+# Creating an empty repo
+mkdir myproject
+cd myproject
+git init
+
+# Create a repo from an existing directory
+cd /home/standage/myproject
+git init
+```
+
+## Git syntax: adding (staging) files
+
+```bash
+# Add an individual file
+git add stats.py
+
+# Add all files in a directory
+git add testdata/
+```
+
+You must stage changes to a file for each commit, even if you have taken a snapshot of that file previously.
+
+## Git syntax: storing a commit
+
+```bash
+# Always a good idea to check status of repository
+# before committing.
+git status
+git commit -m "Added stats script and test data"
+```
+
+Git will take a snapshot of all staged changes and ignore any unstaged changes.
+
+## GitHub
+
+- free hosting for open source repositories
+- stores a clone of your repository
+- has excellent collaboration tools
+
+## GitHub for a new (empty) project
+
+1. Create the repo on GitHub
+2. Clone a local clone using GitHub-provided URL
+
+```bash
+git clone https://github.com/username/YourProject.git
+```
+
+## GitHub for an existing project
+
+1. Create a space for the repo on GitHub
+2. Initialize a git repo locally, commit the project files
+3. Connect the local clone to the remote clone and push
+
+```bash
+cd /home/username/YourProject
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/YourProject.git
+git push origin master
+```
+
+## Git syntax: syncronizing
+
+```bash
+# Update the remote (GitHub) clone
+git push origin master
+
+# Update the local clone
+git pull origin master
+```
