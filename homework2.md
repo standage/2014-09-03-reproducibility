@@ -123,7 +123,7 @@ git commit -m "Added Box quote"
 
 Back in your web browser, return the repo's GitHub page.
 Next to the dropdown menu containing the text "branch: **master**", there should be a + symbol that allows you to add a new file to your repo directly in the web browser.
-Click the + symbol, give the new file a name "food.txt", enter your favorite food, and then click the "Commit new file" button.
+Click the + symbol, give the new file a name "food.txt", enter your favorite food, and then click the **Commit new file** button.
 
 Return to the project page.
 Just beneath the project name and description, there should be a summary of the project showing the number of commits, branches, releases, and contributors.
@@ -134,3 +134,12 @@ Now go back to your terminal and type ``git log``.
 How many commits are there in your local clone?
 Are there any differences between what's on GitHub and what's stored locally?
 If so, why?
+
+Now run...
+
+```bash
+git pull origin master
+git push origin master
+```
+
+...and compare your local clone to your GitHub clone.
